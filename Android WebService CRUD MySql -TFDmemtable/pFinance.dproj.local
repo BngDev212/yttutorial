@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/13 15:08:19.000.407,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 22:36:42.000.387,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 22:39:11.000.210,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2023/01/21 13:26:54.000.189,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 10:14:12.000.433,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 10:15:38.000.347,D:\PROJECT\DELPHI_104\yttutorial\WebService_CRUD_MySql\uMaster.pas=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2023/01/25 10:15:38.000.347,D:\PROJECT\DELPHI_104\yttutorial\WebService_CRUD_MySql\uMaster.fmx=D:\PROJECT\DELPHI_104\Unit1.fmx</Transaction>
+    <Transaction>2023/01/25 10:15:48.000.546,D:\PROJECT\DELPHI_104\yttutorial\WebService_CRUD_MySql\pFinance.dproj=D:\PROJECT\DELPHI_104\Project1.dproj</Transaction>
+    <Transaction>2023/01/26 07:09:50.000.467,=D:\PROJECT\DELPHI_104\yttutorial\WebService_CRUD_MySql\source\BFA.Helper.MemTable.pas</Transaction>
+    <Transaction>2023/01/26 10:24:54.000.707,D:\PROJECT\DELPHI_104\yttutorial\WebService_CRUD_MySql\source\BFA.Helper.MemTable.pas=</Transaction>
+    <Transaction>2023/01/26 10:25:19.000.644,=D:\PROJECT\DELPHI_104\yttutorial\WebService_CRUD_MySql\source\BFA.Helper.MemTable.pas</Transaction>
+    <Transaction>2023/01/26 10:27:11.000.117,D:\PROJECT\DELPHI_104\yttutorial\WebService_CRUD_MySql\source\BFA.Helper.MemTable.pas=</Transaction>
+    <Transaction>2023/01/26 10:27:23.000.059,=D:\PROJECT\DELPHI_104\yttutorial\WebService_CRUD_MySql\source\BFA.Helper.MemTable.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>
