@@ -1,0 +1,48 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Main'
+  ClientHeight = 612
+  ClientWidth = 381
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 381.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object Layout2: TLayout
+    Align = Bottom
+    Position.Y = 562.000000000000000000
+    Size.Width = 381.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 381.000000000000000000
+    Size.Height = 512.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <>
+    RowCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+  end
+end

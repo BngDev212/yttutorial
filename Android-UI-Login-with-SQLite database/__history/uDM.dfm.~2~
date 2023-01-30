@@ -1,0 +1,20 @@
+object dm: Tdm
+  OldCreateOrder = False
+  Height = 332
+  Width = 308
+  object dbLibrary: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite'
+      
+        'Database=D:\PROJECT\DELPHI_104\yttutorial\myshopApp\assets\datab' +
+        'ase\myshopdb.db3')
+    LoginPrompt = False
+    Left = 80
+    Top = 64
+  end
+  object FDQuery1: TFDQuery
+    Connection = dbLibrary
+    Left = 80
+    Top = 152
+  end
+end

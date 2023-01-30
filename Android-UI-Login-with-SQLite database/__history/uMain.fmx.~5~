@@ -1,0 +1,90 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Main'
+  ClientHeight = 604
+  ClientWidth = 327
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 327.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Center
+      TextSettings.HorzAlign = Center
+      Text = 'Main Menu'
+      TabOrder = 0
+    end
+    object btClose: TCornerButton
+      Align = Right
+      ModalResult = 8
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 242.000000000000000000
+      Position.Y = 5.000000000000000000
+      Sides = [Top, Left, Bottom, Right]
+      Size.Width = 80.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Close'
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+    end
+  end
+  object Layout2: TLayout
+    Align = Bottom
+    Position.Y = 554.000000000000000000
+    Size.Width = 327.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object lUsr: TLabel
+      Align = Horizontal
+      Margins.Left = 30.000000000000000000
+      Margins.Right = 30.000000000000000000
+      Position.X = 30.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 267.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lUsr'
+      TabOrder = 0
+    end
+  end
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 327.000000000000000000
+    Size.Height = 504.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    ColumnCollection = <
+      item
+        Value = 33.333333333333340000
+      end
+      item
+        Value = 33.333333333333340000
+      end
+      item
+        Value = 33.333333333333340000
+      end>
+    ControlCollection = <>
+    RowCollection = <
+      item
+        Value = 33.333333333333340000
+      end
+      item
+        Value = 33.333333333333340000
+      end
+      item
+        Value = 33.333333333333340000
+      end>
+  end
+end

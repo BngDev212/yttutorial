@@ -1,0 +1,16 @@
+program MyShopingApp;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  uLogin in 'uLogin.pas' {FrmLogin},
+  uMain in 'uMain.pas' {FrmMain};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TFrmMain, FrmMain);
+  Application.Run;
+end.

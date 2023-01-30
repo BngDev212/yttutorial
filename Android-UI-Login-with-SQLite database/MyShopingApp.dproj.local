@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/13 15:08:19.000.407,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 22:36:42.000.387,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 22:39:11.000.210,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2022/12/26 06:45:41.000.722,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2022/12/26 06:46:09.000.903,D:\PROJECT\DELPHI_104\yttutorial\myshopApp\uLogin.fmx=D:\PROJECT\DELPHI_104\Unit1.fmx</Transaction>
+    <Transaction>2022/12/26 06:46:09.000.903,D:\PROJECT\DELPHI_104\yttutorial\myshopApp\uLogin.pas=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2022/12/26 06:46:39.000.094,D:\PROJECT\DELPHI_104\yttutorial\myshopApp\MyShopingApp.dproj=D:\PROJECT\DELPHI_104\Project1.dproj</Transaction>
+    <Transaction>2022/12/26 08:56:04.000.655,=D:\PROJECT\DELPHI_104\yttutorial\myshopApp\Unit1.pas</Transaction>
+    <Transaction>2022/12/26 08:56:17.000.526,D:\PROJECT\DELPHI_104\yttutorial\myshopApp\Unit1.pas=D:\PROJECT\DELPHI_104\yttutorial\myshopApp\uMain.pas</Transaction>
+    <Transaction>2022/12/26 08:56:17.000.526,D:\PROJECT\DELPHI_104\yttutorial\myshopApp\Unit1.fmx=D:\PROJECT\DELPHI_104\yttutorial\myshopApp\uMain.fmx</Transaction>
+    <Transaction>2022/12/26 08:59:07.000.470,=D:\PROJECT\DELPHI_104\yttutorial\myshopApp\Unit1.pas</Transaction>
+    <Transaction>2022/12/26 08:59:21.000.044,D:\PROJECT\DELPHI_104\yttutorial\myshopApp\Unit1.pas=D:\PROJECT\DELPHI_104\yttutorial\myshopApp\uDM.pas</Transaction>
+    <Transaction>2022/12/26 08:59:21.000.044,D:\PROJECT\DELPHI_104\yttutorial\myshopApp\Unit1.dfm=D:\PROJECT\DELPHI_104\yttutorial\myshopApp\uDM.dfm</Transaction>
+    <Transaction>2022/12/26 09:01:32.000.256,=D:\PROJECT\DELPHI_104\yttutorial\myshopApp\assets\database\myshopdb.db3</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android64="" Android=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

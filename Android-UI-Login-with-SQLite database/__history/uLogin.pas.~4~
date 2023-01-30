@@ -1,0 +1,64 @@
+unit uLogin;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Objects, FMX.Edit, FMX.Controls.Presentation, FMX.Layouts;
+
+type
+  TFrmLogin = class(TForm)
+    Layout1: TLayout;
+    Rectangle1: TRectangle;
+    reInputs: TRectangle;
+    Layout3: TLayout;
+    Line1: TLine;
+    lbusr: TLabel;
+    edUserName: TEdit;
+    Line2: TLine;
+    lbPwd: TLabel;
+    edPassword: TEdit;
+    Circle1: TCircle;
+    loInputs: TLayout;
+    Image1: TImage;
+    Label1: TLabel;
+    cbShowPassword: TCheckBox;
+    btLogin: TCornerButton;
+    procedure cbShowPasswordChange(Sender: TObject);
+    procedure edUserNameKeyDown(Sender: TObject; var Key: Word;
+      var KeyChar: Char; Shift: TShiftState);
+    procedure edPasswordKeyDown(Sender: TObject; var Key: Word;
+      var KeyChar: Char; Shift: TShiftState);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmLogin: TFrmLogin;
+
+implementation
+
+{$R *.fmx}
+
+procedure TFrmLogin.cbShowPasswordChange(Sender: TObject);
+begin
+ edPassword.Password:= not cbShowPassword.IsChecked;
+end;
+
+procedure TFrmLogin.edPasswordKeyDown(Sender: TObject; var Key: Word;
+  var KeyChar: Char; Shift: TShiftState);
+begin
+  if key=vkreturn  then btLogin.setfocus;
+end;
+
+procedure TFrmLogin.edUserNameKeyDown(Sender: TObject; var Key: Word;
+  var KeyChar: Char; Shift: TShiftState);
+begin
+  if key=vkreturn  then edpassword.setfocus;
+
+end;
+
+end.
