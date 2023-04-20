@@ -1,0 +1,111 @@
+unit uutama;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
+  IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient, IdHTTP,System.JSON,
+  FMX.Memo.Types, FMX.Controls.Presentation, FMX.ScrollBox, FMX.Memo,
+  FMX.StdCtrls, REST.Types, REST.Client, Data.Bind.Components,
+  Data.Bind.ObjectScope,  IdSSLOpenSSL;
+
+type
+  TForm1 = class(TForm)
+    IdHTTP1: TIdHTTP;
+    Memo1: TMemo;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+
+  private
+    function AskChatGPT(prompt: string): string;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+
+
+function ChatWithGPT(input: string): string;
+var
+  http: TIdHTTP;
+  ssl: TIdSSLIOHandlerSocketOpenSSL;
+  response, url, requestBody: string;
+  jsonObj: TJSONObject;
+begin
+  url := 'https://api.openai.com/v1/completions';//'https://api.openai.com/v1/engines/davinci-codex/completions';
+  requestBody := '{"prompt": "' + input + '", "max_tokens": 50, "n": 1, "stop": ["\n"]}';
+
+  //'model',       'text-davinci-003',
+  //QObj := SO(['model',       'text-davinci-003',
+  //              'prompt',      FQuestion,
+ //               'max_tokens',  2048,
+ //               'temperature', 0]);
+ //SslHttpCli1.ExtraHeaders.Add('Authorization: Bearer ' + FApiKey);
+ //   SslHttpCli1.ExtraHeaders.Add('Content-Type: application/json');
+ //   SslHttpCli1.ContentTypePost := 'application/json';
+
+  http := TIdHTTP.Create;
+  try
+    ssl := TIdSSLIOHandlerSocketOpenSSL.Create(http);
+    http.IOHandler := ssl;
+    http.Request.ContentType := 'application/json';
+    http.Request.CustomHeaders.AddValue('Authorization', 'Bearer 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');
+
+    response := http.Post(url, requestBody);
+
+    jsonObj := TJSONObject.ParseJSONValue(response) as TJSONObject;
+    try
+      Result := jsonObj.GetValue('choices').ToString// .Items[0].GetValue('text').Value;
+    finally
+      jsonObj.Free;
+    end;
+  finally
+    http.Free;
+  end;
+end;
+
+function TForm1.AskChatGPT(prompt: string): string;
+var
+  http: TIdHTTP;
+  json: TJSONObject;
+begin
+  http := TIdHTTP.Create(nil);
+  json := TJSONObject.Create;
+  try
+    json.AddPair('prompt', prompt);
+    json.AddPair('temperature', '0.5');
+    json.AddPair('max_tokens', '50');
+    json.AddPair('n', '1');
+    json.AddPair('stop', '.');
+    http.Request.CustomHeaders.Values['Authorization'] := 'Bearer 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';
+    http.Request.ContentType := 'application/json';
+    Result := http.Post('https://api.openai.com/v1/engine/Davinci-codex/completions', json.ToJSON);
+  finally
+    json.Free;
+    http.Free;
+  end;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  response: string;
+begin
+  response := ChatWithGPT('Hi, how are you?');
+  ShowMessage(response);
+end;
+  //Memo1.Lines.Clear;
+  //Memo1.Lines.Add(AskChatGPT('Hello, how are you?'));
+
+
+
+
+
+
+end.

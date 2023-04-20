@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/13 15:08:19.000.407,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 22:36:42.000.387,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2022/01/06 22:39:11.000.210,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2023/01/21 13:26:54.000.189,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2023/04/17 10:10:23.000.532,=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2023/04/17 16:04:59.000.791,D:\PROJECT\DELPHI_104\chatGPT-test\uutama.pas=D:\PROJECT\DELPHI_104\Unit1.pas</Transaction>
+    <Transaction>2023/04/17 16:04:59.000.791,D:\PROJECT\DELPHI_104\chatGPT-test\uutama.fmx=D:\PROJECT\DELPHI_104\Unit1.fmx</Transaction>
+    <Transaction>2023/04/17 16:05:09.000.153,D:\PROJECT\DELPHI_104\chatGPT-test\pchatgpt1.dproj=D:\PROJECT\DELPHI_104\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
