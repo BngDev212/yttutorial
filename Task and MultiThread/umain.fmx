@@ -1,0 +1,192 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 569
+  ClientWidth = 389
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 389.000000000000000000
+    Size.Height = 569.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      389s
+      543s
+      389s
+      543s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 69.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Position.X = 32.000000000000000000
+        Position.Y = 24.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 313.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object Button1: TButton
+        Position.X = 32.000000000000000000
+        Position.Y = 352.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Button1'
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Position.X = 32.000000000000000000
+        Position.Y = 432.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'TASK'
+        OnClick = Button2Click
+      end
+      object BtThread: TButton
+        Position.X = 32.000000000000000000
+        Position.Y = 391.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Thread'
+        OnClick = BtThreadClick
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 69.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Layout1: TLayout
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 379.000000000000000000
+        Size.Height = 327.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle1: TRectangle
+          Align = Client
+          Fill.Kind = None
+          Size.Width = 379.000000000000000000
+          Size.Height = 327.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Image1: TImage
+            MultiResBitmap = <
+              item
+              end>
+            Align = Client
+            Size.Width = 379.000000000000000000
+            Size.Height = 327.000000000000000000
+            Size.PlatformDefault = False
+            object AniIndicator1: TAniIndicator
+              Position.X = 160.000000000000000000
+              Position.Y = 126.000000000000000000
+            end
+          end
+        end
+      end
+      object Layout2: TLayout
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 379.000000000000000000
+        Size.Height = 112.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object btDownload: TButton
+          Align = Horizontal
+          Margins.Left = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Position.X = 20.000000000000000000
+          Position.Y = 67.000000000000000000
+          Size.Width = 339.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Donwload'
+          OnClick = btDownloadClick
+        end
+        object mURL: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          Align = Horizontal
+          Position.Y = 15.000000000000000000
+          Size.Width = 379.000000000000000000
+          Size.Height = 43.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Viewport.Width = 375.000000000000000000
+          Viewport.Height = 39.000000000000000000
+        end
+      end
+      object Layout3: TLayout
+        Align = Bottom
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 464.000000000000000000
+        Size.Width = 379.000000000000000000
+        Size.Height = 74.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object btTest: TButton
+          Align = Center
+          Size.Width = 93.000000000000000000
+          Size.Height = 49.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Add test Url'
+          OnClick = btTestClick
+        end
+      end
+    end
+  end
+  object nHttpClient: TNetHTTPClient
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 310
+    Top = 40
+  end
+end
